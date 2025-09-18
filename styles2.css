@@ -1,0 +1,159 @@
+/* 🌐 Variáveis de Tema */
+:root {
+  --bg: #0b0b0b;
+  --card: #0f0f10;
+  --muted: #9aa0a6;
+  --accent: #ff6b35;       /* cor da brasa */
+  --accent-2: #ffb86b;
+  --glass: rgba(255, 255, 255, 0.03);
+  --radius: 14px;
+  --max-width: 1100px;
+}
+
+/* 🧼 Reset e Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #070707 0%, #0b0b0b 100%);
+  color: #eee;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 32px;
+}
+
+/* 🧭 Layout Responsivo */
+.container {
+  max-width: var(--max-width);
+  margin: 18px auto;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .logo h1 {
+    font-size: 22px;
+  }
+}
+
+/* 🏷️ Cabeçalho do Site */
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto 28px;
+  padding: 20px 24px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255, 107, 53, 0.06), transparent);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo .ember {
+  width: 70px;
+  height: 52px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 6px 18px rgba(255, 107, 53, 0.12);
+}
+
+.logo h1 {
+  font-size: 28px;
+  letter-spacing: 0.4px;
+}
+
+.logo h1 span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.tag {
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* 📦 Cartões de Conteúdo */
+.card {
+  background: var(--card);
+  padding: 22px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.card-footer {
+  margin-top: 12px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.03);
+  padding-top: 12px;
+  color: var(--muted);
+}
+
+/* 📋 Menu Lateral */
+.menu .section-title {
+  font-size: 18px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.items {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.items li {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+  margin-bottom: 8px;
+  color: #e8e8e8;
+}
+
+/* ℹ️ Informações */
+.info h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.info p,
+.info li {
+  color: var(--muted);
+}
+
+/* 📞 Contato e Rodapé */
+.contact {
+  margin-top: 14px;
+  background: var(--glass);
+  padding: 12px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 20px auto 0;
+  padding: 16px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* 💡 Tipografia Extra */
+strong {
+  color: #fff;
+}
