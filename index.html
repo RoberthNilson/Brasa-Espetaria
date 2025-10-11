@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brasa Espetaria - Cardápio</title>
+  <link rel="stylesheet" href="styles2.css">
+  <style>
+    /* ajuste apenas da logo */
+    .logo-img {
+      width: 60px;   /* diminui a logo */
+      height: auto;  /* mantém proporção */
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <!-- Troque o caminho abaixo pela sua logo -->
+      <img src="src/Brasa.png" alt="" class="logo-img">
+      <h1><span>Brasa Espetaria</span></h1>
+    </div>
+    <p class="tag">🔥 Sabor na brasa • Espetinhos e acompanhamentos 🔥</p>
+  </header>
+
+  <main class="container">
+    <section class="card menu">
+      <h2 class="section-title">Espetinhos</h2>
+      <ul class="items">
+        <li><strong>Carne</strong><span class="price"> R$ 10,00</span></li>
+        <li><strong>Asinha</strong><span class="price"> R$ 10,00</span></li>
+        <li><strong>Frango com Bacon</strong><span class="price"> R$ 10,00</span></li>
+      </ul>
+
+      <h2 class="section-title">Acompanhamentos</h2>
+      <ul class="items">
+        <li>Arroz <span class="price" > R$ 5,00</span></li>
+        <li>Feijão tropeiro <span class="price"> R$ 5,00</span></li>
+        <li>Mandioca cozida <span class="price"> R$ 5,00</span></li>
+        <li>Vinagrete <span class="price"> R$ 5,00</span></li>
+      </ul>
+
+      <h2 class="section-title">Bebidas</h2>
+      <ul class="items">
+        <li>Refrigerante — Guaraná / Coca 
+          <ul>
+            <li>Lata <span class="price"> R$ 6,00</span></li>
+            <li>1L <span class="price"> R$ 10,00</span></li>
+            <li>2L <span class="price"> R$ 15,00</span></li>
+          </ul>
+        </li>
+        <li>Cervejas de Garrafa
+          <ul>
+            <li>Skol <span class="price"> R$ 12,00</span></li>
+            <li>Amstel <span class="price"> R$ 12,00</span></li>
+            <li>Heineken <span class="price"> R$ 15,00</span></li>
+          </ul>
+           </li>
+        <li>Sucos copo
+          <ul>
+            <li>maracuja <span class="price"> R$ 10,00</span></li>
+            <li>Goiaba <span class="price"> R$ 10,00</span></li>
+            <li>acerola <span class="price"> R$ 10,00</span></li>
+            <li>cajá <span class="price"> R$ 10,00</span></li>
+          </ul>
+        </li>
+        <li>Sucos jarra 1L
+          <ul>
+            <li>maracuja <span class="price"> R$ 20,00</span></li>
+            <li>Goiaba <span class="price"> R$ 20,00</span></li>
+            <li>acerola <span class="price"> R$ 20,00</span></li>
+            <li>cajá <span class="price"> R$ 20,00</span></li>
+          </ul>
+      </li>
+
+      </ul>
+      
+      <footer class="card-footer">
+        <p>Atendimento: Aberto de segunda a sabado • Faça seu pedido! Localizado na Rua Gonçalves Dias.</p>
+      </footer>
+    </section>
+
+    <aside class="card info">
+      <h3>Jantinhas</h3>
+      <ol>
+        <li>Simples <span class="price"> R$ 10,00</span></li>
+        <li>Completo <span class="price"> R$ 18,00</span></li>
+        <li>retirada <spam class="price"> R$ 19,00</spam></li>
+        <li>Entrega <spam class="price"> R$ 23,00</spam></li>
+      </ol>
+
+      <div class="contact">
+        <p><strong>Brasa Espetaria</strong></p>
+        <p>Faça seu pedido: (99) 8118-6355</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Brasa Espetaria</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
