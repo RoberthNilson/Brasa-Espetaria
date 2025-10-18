@@ -126,7 +126,13 @@ body {
   text-align: center;
 }
 
-/* 🔥 Botão Brasa */
+/* 🔥 Botão Brasa Centralizado */
+.btn-container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  margin-top: 20px;
+}
+
 button {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
