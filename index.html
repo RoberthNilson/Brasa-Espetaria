@@ -5,19 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Brasa Espetaria - Cardápio</title>
   <link rel="stylesheet" href="styles2.css">
-  <style>
-    /* ajuste apenas da logo */
-    .logo-img {
-      width: 60px;   /* diminui a logo */
-      height: auto;  /* mantém proporção */
-    }
-  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="logo">
-      <!-- Troque o caminho abaixo pela sua logo -->
-      <img src="src/Brasa.png" alt="" class="logo-img">
+      <img src="/src/brasa.png" alt="Logo Brasa Espetaria" class="logo-img">
       <h1><span>Brasa Espetaria</span></h1>
     </div>
     <p class="tag">🔥 Sabor na brasa • Espetinhos e acompanhamentos 🔥</p>
@@ -30,12 +22,12 @@
         <li><strong>Carne</strong><span class="price"> R$ 10,00</span></li>
         <li><strong>Asinha</strong><span class="price"> R$ 10,00</span></li>
         <li><strong>Frango com Bacon</strong><span class="price"> R$ 10,00</span></li>
-        <li><strong>Carne com bacon</strong><span class="price"> R$ 10,00</span></li>
+        <li><strong>Bacon com Carne</strong><span class="price"> R$ 10,00</span></li>
       </ul>
 
       <h2 class="section-title">Acompanhamentos</h2>
       <ul class="items">
-        <li>Arroz <span class="price" > R$ 5,00</span></li>
+        <li>Arroz <span class="price"> R$ 5,00</span></li>
         <li>Feijão tropeiro <span class="price"> R$ 5,00</span></li>
         <li>Mandioca cozida <span class="price"> R$ 5,00</span></li>
         <li>Vinagrete <span class="price"> R$ 5,00</span></li>
@@ -43,41 +35,44 @@
 
       <h2 class="section-title">Bebidas</h2>
       <ul class="items">
-        <li>Refrigerante — Guaraná / Coca 
+        <li>
+          Refrigerante — Guaraná / Coca
           <ul>
             <li>Lata <span class="price"> R$ 6,00</span></li>
             <li>1L <span class="price"> R$ 10,00</span></li>
             <li>2L <span class="price"> R$ 15,00</span></li>
           </ul>
         </li>
-        <li>Cervejas de Garrafa
+        <li>
+          Cervejas de Garrafa
           <ul>
             <li>Skol <span class="price"> R$ 12,00</span></li>
-            <li>Original <span class="price"> R$ 12,00</span></li>
+            <li>Amstel <span class="price"> R$ 12,00</span></li>
             <li>Heineken <span class="price"> R$ 15,00</span></li>
           </ul>
-           </li>
-        <li>Sucos copo
+        </li>
+        <li>
+          Sucos (copo)
           <ul>
-            <li>maracuja <span class="price"> R$ 10,00</span></li>
-            <li>Goiaba <span class="price"> R$ 7,00</span></li>
-            <li>acerola <span class="price"> R$ 7,00</span></li>
-            <li>cajá <span class="price"> R$ 10,00</span></li>
+            <li>Maracujá <span class="price"> R$ 10,00</span></li>
+            <li>Goiaba <span class="price"> R$ 10,00</span></li>
+            <li>Acerola <span class="price"> R$ 10,00</span></li>
+            <li>Cajá <span class="price"> R$ 10,00</span></li>
           </ul>
         </li>
-        <li>Sucos jarra 1L
+        <li>
+          Sucos (jarra 1L)
           <ul>
-            <li>maracuja <span class="price"> R$ 20,00</span></li>
+            <li>Maracujá <span class="price"> R$ 20,00</span></li>
             <li>Goiaba <span class="price"> R$ 20,00</span></li>
-            <li>acerola <span class="price"> R$ 20,00</span></li>
-            <li>cajá <span class="price"> R$ 20,00</span></li>
+            <li>Acerola <span class="price"> R$ 20,00</span></li>
+            <li>Cajá <span class="price"> R$ 20,00</span></li>
           </ul>
-      </li>
-
+        </li>
       </ul>
-      
+
       <footer class="card-footer">
-        <p>Atendimento: Aberto de segunda a sabado • Faça seu pedido! Localizado na Rua Gonçalves Dias.</p>
+        <p>Atendimento: Aberto de segunda a sábado • Faça seu pedido! Localizado na Rua Gonçalves Dias.</p>
       </footer>
     </section>
 
@@ -85,14 +80,17 @@
       <h3>Jantinhas</h3>
       <ol>
         <li>Simples <span class="price"> R$ 10,00</span></li>
-        <li>Completo <span class="price"> R$ 18,00</span></li>
-        <li>retirada <spam class="price"> R$ 19,00</spam></li>
-        <li>Entrega <spam class="price"> R$ 23,00</spam></li>
+        <li>Completa <span class="price"> R$ 18,00</span></li>
+        <li>Retirada <span class="price"> R$ 19,00</span></li>
+        <li>Entrega <span class="price"> R$ 23,00</span></li>
       </ol>
 
       <div class="contact">
         <p><strong>Brasa Espetaria</strong></p>
-        <p>Faça seu pedido: (99) 8118-6355</p>
+        <button onclick="window.location.href='https://wa.me/559981186355'">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="whatsapp-icon">
+          Pedir via WhatsApp
+        </button>
       </div>
     </aside>
   </main>
@@ -106,5 +104,3 @@
   </script>
 </body>
 </html>
-
-
