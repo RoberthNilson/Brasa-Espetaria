@@ -1,36 +1,30 @@
-/* 🌐 Variáveis de Tema */
+/* 🌐 Tema */
 :root {
   --bg: #0b0b0b;
   --card: #0f0f10;
   --muted: #9aa0a6;
-  --accent: #ff6b35;       /* cor da brasa */
-  --accent-2: #ffb86b;
+  --accent: #ff6b35; /* Laranja Brasa */
+  --accent-2: #ffb86b; /* Dourado */
   --glass: rgba(255, 255, 255, 0.03);
   --radius: 14px;
   --max-width: 1100px;
 }
 
-/* 🧼 Reset e Base */
+/* 🧼 Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   background: linear-gradient(180deg, #070707 0%, #0b0b0b 100%);
   color: #eee;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', system-ui, sans-serif;
   padding: 32px;
 }
 
-/* 🧭 Layout Responsivo */
+/* 🧭 Layout */
 .container {
   max-width: var(--max-width);
   margin: 18px auto;
@@ -43,13 +37,9 @@ body {
   .container {
     grid-template-columns: 1fr;
   }
-
-  .logo h1 {
-    font-size: 22px;
-  }
 }
 
-/* 🏷️ Cabeçalho do Site */
+/* 🏷️ Cabeçalho */
 .site-header {
   max-width: var(--max-width);
   margin: 0 auto 28px;
@@ -67,17 +57,9 @@ body {
   gap: 16px;
 }
 
-.logo .ember {
-  width: 70px;
-  height: 52px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  box-shadow: 0 6px 18px rgba(255, 107, 53, 0.12);
-}
-
-.logo h1 {
-  font-size: 28px;
-  letter-spacing: 0.4px;
+.logo-img {
+  width: 60px;
+  height: auto;
 }
 
 .logo h1 span {
@@ -90,7 +72,7 @@ body {
   margin-top: 8px;
 }
 
-/* 📦 Cartões de Conteúdo */
+/* 📦 Cartões */
 .card {
   background: var(--card);
   padding: 22px;
@@ -98,15 +80,8 @@ body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
 }
 
-.card-footer {
-  margin-top: 12px;
-  border-top: 1px dashed rgba(255, 255, 255, 0.03);
-  padding-top: 12px;
-  color: var(--muted);
-}
-
-/* 📋 Menu Lateral */
-.menu .section-title {
+/* 🧾 Menu */
+.section-title {
   font-size: 18px;
   color: var(--accent);
   margin-bottom: 10px;
@@ -125,35 +100,84 @@ body {
   color: #e8e8e8;
 }
 
-/* ℹ️ Informações */
+/* 💬 Informações */
 .info h3 {
   color: var(--accent);
   margin-bottom: 8px;
 }
 
-.info p,
 .info li {
   color: var(--muted);
 }
 
-/* 📞 Contato e Rodapé */
+.card-footer {
+  margin-top: 12px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+  color: var(--muted);
+}
+
+/* 📞 Contato */
 .contact {
   margin-top: 14px;
   background: var(--glass);
   padding: 12px;
   border-radius: 10px;
-  color: var(--muted);
+  text-align: center;
 }
 
+/* 🔥 Botão Brasa */
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 107, 53, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.35), transparent);
+  transition: all 0.5s ease;
+}
+
+button:hover::before {
+  left: 125%;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 22px rgba(255, 107, 53, 0.8);
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  vertical-align: middle;
+}
+
+/* ⚓ Rodapé */
 .site-footer {
   max-width: var(--max-width);
   margin: 20px auto 0;
   padding: 16px;
   text-align: center;
   color: var(--muted);
-}
-
-/* 💡 Tipografia Extra */
-strong {
-  color: #fff;
 }
